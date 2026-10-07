@@ -1,1 +1,450 @@
 manju
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Resume</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f2f4f7;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .resume {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #fff;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header */
+        .header {
+            background: #172554;
+            color: white;
+            padding: 40px;
+        }
+
+        .header h1 {
+            font-size: 38px;
+            margin-bottom: 5px;
+        }
+
+        .header h2 {
+            font-size: 20px;
+            font-weight: normal;
+            color: #bfdbfe;
+            margin-bottom: 18px;
+        }
+
+        .contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px 25px;
+            font-size: 14px;
+        }
+
+        .contact a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Main content */
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+        }
+
+        .sidebar {
+            background: #f8fafc;
+            padding: 35px 30px;
+        }
+
+        .main {
+            padding: 35px 40px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h3 {
+            color: #172554;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 2px solid #2563eb;
+            padding-bottom: 7px;
+            margin-bottom: 15px;
+        }
+
+        .section p {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        /* Skills */
+        .skills {
+            list-style: none;
+        }
+
+        .skills li {
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        .skill-bar {
+            height: 6px;
+            background: #dbeafe;
+            border-radius: 5px;
+            margin-top: 4px;
+        }
+
+        .skill-level {
+            height: 100%;
+            background: #2563eb;
+            border-radius: 5px;
+        }
+
+        /* Experience */
+        .job {
+            margin-bottom: 25px;
+        }
+
+        .job h4 {
+            font-size: 17px;
+            color: #111827;
+        }
+
+        .job .company {
+            color: #2563eb;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .job .date {
+            color: #6b7280;
+            font-size: 13px;
+            margin-bottom: 8px;
+        }
+
+        .job ul {
+            padding-left: 20px;
+            font-size: 14px;
+        }
+
+        /* Education */
+        .education {
+            margin-bottom: 18px;
+        }
+
+        .education h4 {
+            font-size: 16px;
+            color: #111827;
+        }
+
+        .education p {
+            margin: 0;
+            color: #555;
+        }
+
+        /* Projects */
+        .project {
+            margin-bottom: 20px;
+        }
+
+        .project h4 {
+            color: #111827;
+            font-size: 16px;
+        }
+
+        .project p {
+            font-size: 14px;
+        }
+
+        /* Print */
+        @media print {
+            body {
+                background: white;
+            }
+
+            .resume {
+                margin: 0;
+                box-shadow: none;
+                max-width: 100%;
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 700px) {
+            .resume {
+                margin: 0;
+            }
+
+            .content {
+                grid-template-columns: 1fr;
+            }
+
+            .header {
+                padding: 30px 25px;
+            }
+
+            .header h1 {
+                font-size: 30px;
+            }
+
+            .sidebar,
+            .main {
+                padding: 25px;
+            }
+
+            .contact {
+                flex-direction: column;
+                gap: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="resume">
+
+    <!-- HEADER -->
+    <header class="header">
+        <h1>Your Name</h1>
+        <h2>Web Developer | Software Engineer</h2>
+
+        <div class="contact">
+            <span>📍 Mumbai, India</span>
+            <span>📞 +91 98765 43210</span>
+            <span>✉️ yourname@email.com</span>
+            <span>
+                <a href="https://linkedin.com/" target="_blank">
+                    LinkedIn
+                </a>
+            </span>
+            <span>
+                <a href="https://github.com/" target="_blank">
+                    GitHub
+                </a>
+            </span>
+        </div>
+    </header>
+
+    <!-- CONTENT -->
+    <div class="content">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <!-- PROFILE -->
+            <section class="section">
+                <h3>Profile</h3>
+                <p>
+                    Motivated and detail-oriented professional with experience
+                    in web development, software development, and problem
+                    solving. Passionate about creating modern, responsive,
+                    and user-friendly applications.
+                </p>
+            </section>
+
+            <!-- SKILLS -->
+            <section class="section">
+                <h3>Skills</h3>
+
+                <ul class="skills">
+                    <li>
+                        HTML & CSS
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 95%;"></div>
+                        </div>
+                    </li>
+
+                    <li>
+                        JavaScript
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 85%;"></div>
+                        </div>
+                    </li>
+
+                    <li>
+                        React
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 80%;"></div>
+                        </div>
+                    </li>
+
+                    <li>
+                        Python
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 75%;"></div>
+                        </div>
+                    </li>
+
+                    <li>
+                        SQL
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 80%;"></div>
+                        </div>
+                    </li>
+
+                    <li>
+                        Git & GitHub
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 85%;"></div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- LANGUAGES -->
+            <section class="section">
+                <h3>Languages</h3>
+                <p>English — Fluent</p>
+                <p>Hindi — Fluent</p>
+                <p>Marathi — Native</p>
+            </section>
+
+            <!-- INTERESTS -->
+            <section class="section">
+                <h3>Interests</h3>
+                <p>Technology</p>
+                <p>Programming</p>
+                <p>Reading</p>
+                <p>Travel</p>
+            </section>
+
+        </aside>
+
+        <!-- MAIN -->
+        <main class="main">
+
+            <!-- EXPERIENCE -->
+            <section class="section">
+                <h3>Work Experience</h3>
+
+                <div class="job">
+                    <h4>Web Developer</h4>
+                    <div class="company">ABC Technologies</div>
+                    <div class="date">2023 – Present | Mumbai, India</div>
+
+                    <ul>
+                        <li>
+                            Developed responsive websites using HTML, CSS,
+                            JavaScript, and React.
+                        </li>
+                        <li>
+                            Improved website performance and user experience.
+                        </li>
+                        <li>
+                            Collaborated with designers and backend developers
+                            to deliver projects.
+                        </li>
+                        <li>
+                            Maintained and optimized existing web applications.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <h4>Junior Developer</h4>
+                    <div class="company">XYZ Solutions</div>
+                    <div class="date">2021 – 2023 | Mumbai, India</div>
+
+                    <ul>
+                        <li>
+                            Created web pages and reusable UI components.
+                        </li>
+                        <li>
+                            Worked with REST APIs and databases.
+                        </li>
+                        <li>
+                            Fixed bugs and implemented new application features.
+                        </li>
+                    </ul>
+                </div>
+
+            </section>
+
+            <!-- EDUCATION -->
+            <section class="section">
+                <h3>Education</h3>
+
+                <div class="education">
+                    <h4>Bachelor of Technology in Computer Science</h4>
+                    <p>ABC University</p>
+                    <p>2017 – 2021</p>
+                </div>
+
+                <div class="education">
+                    <h4>Higher Secondary Education</h4>
+                    <p>XYZ Junior College</p>
+                    <p>2015 – 2017</p>
+                </div>
+            </section>
+
+            <!-- PROJECTS -->
+            <section class="section">
+                <h3>Projects</h3>
+
+                <div class="project">
+                    <h4>Personal Portfolio Website</h4>
+                    <p>
+                        Designed and developed a responsive portfolio website
+                        using HTML, CSS, JavaScript, and modern UI principles.
+                    </p>
+                </div>
+
+                <div class="project">
+                    <h4>Online Shopping Website</h4>
+                    <p>
+                        Developed an e-commerce application with product
+                        listings, shopping cart functionality, authentication,
+                        and responsive design.
+                    </p>
+                </div>
+
+                <div class="project">
+                    <h4>Task Management Application</h4>
+                    <p>
+                        Built a task management application allowing users to
+                        create, update, delete, and track tasks.
+                    </p>
+                </div>
+
+            </section>
+
+            <!-- CERTIFICATIONS -->
+            <section class="section">
+                <h3>Certifications</h3>
+
+                <p>
+                    • Web Development Certification — ABC Institute
+                </p>
+
+                <p>
+                    • JavaScript Certification — XYZ Academy
+                </p>
+
+                <p>
+                    • Python Programming — Online Certification
+                </p>
+            </section>
+
+        </main>
+    </div>
+
+</div>
+
+</body>
+</html>
